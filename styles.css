@@ -1,13 +1,13 @@
 :root {
-  --bg: #0f1115;
-  --panel: rgba(255, 255, 255, 0.04);
-  --primary: #6b8a2f;
-  --accent: #e4b05a;
-  --text: #e9eaee;
-  --muted: #b4b6c2;
-  --card: rgba(255, 255, 255, 0.06);
-  --border: rgba(255, 255, 255, 0.08);
-  --shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+  --bg: #f6f8f2;
+  --panel: #ffffff;
+  --primary: #74b559;
+  --accent: #f5a142;
+  --text: #253238;
+  --muted: #5c6b75;
+  --card: #ffffff;
+  --border: #e4ebf2;
+  --shadow: 0 24px 60px rgba(44, 90, 143, 0.12);
   font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
 }
 
@@ -17,8 +17,8 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle at 10% 20%, rgba(107, 138, 47, 0.12), transparent 25%),
-              radial-gradient(circle at 80% 0%, rgba(228, 176, 90, 0.1), transparent 25%),
+  background: radial-gradient(circle at 10% 20%, rgba(116, 181, 89, 0.12), transparent 28%),
+              radial-gradient(circle at 80% 0%, rgba(245, 161, 66, 0.12), transparent 28%),
               var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -37,7 +37,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 18px 48px;
-  background: rgba(15, 17, 21, 0.82);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
   z-index: 20;
@@ -54,7 +54,7 @@ a {
   height: 56px;
   object-fit: contain;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.04);
+  background: #fdfdfd;
   padding: 6px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
@@ -87,8 +87,8 @@ a {
 
 .main-nav a:hover,
 .main-nav a:focus-visible {
-  color: #fff;
-  background: var(--card);
+  color: var(--text);
+  background: #eef5ec;
 }
 
 .nav-cta {
@@ -131,7 +131,7 @@ a {
 
 .slide-content {
   max-width: 640px;
-  background: rgba(15, 17, 21, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   padding: 32px;
   border-radius: 18px;
   border: 1px solid var(--border);
@@ -177,15 +177,16 @@ p {
 }
 
 .btn.secondary {
-  background: var(--card);
-  border-color: var(--border);
-  color: #fff;
+  background: #ffffff;
+  border-color: var(--primary);
+  color: var(--text);
+  box-shadow: var(--shadow);
 }
 
 .btn.ghost {
   background: transparent;
-  border-color: var(--border);
-  color: #fff;
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 .btn:hover,
@@ -212,16 +213,17 @@ p {
   height: 44px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: rgba(15, 17, 21, 0.7);
-  color: #fff;
+  background: #fff;
+  color: var(--text);
   font-size: 1.6rem;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow);
 }
 
 .control:hover,
 .control:focus-visible {
-  background: var(--card);
+  background: #eef5ec;
 }
 
 .slider-dots {
@@ -237,7 +239,7 @@ p {
   height: 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.25);
+  background: #e9f2e6;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -293,7 +295,7 @@ p {
 
 .sample-menu {
   margin-top: 48px;
-  background: rgba(255, 255, 255, 0.03);
+  background: #f8fbf5;
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 32px 26px 28px;
@@ -310,9 +312,10 @@ p {
   padding: 16px 18px;
   border-radius: 14px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.02);
+  background: #fff;
   display: grid;
   gap: 6px;
+  box-shadow: 0 10px 28px rgba(37, 50, 56, 0.08);
 }
 
 .sample-name {
@@ -331,9 +334,7 @@ p {
 }
 
 .highlight {
-  background: radial-gradient(circle at 20% 20%, rgba(107, 138, 47, 0.12), transparent 30%),
-              radial-gradient(circle at 80% 10%, rgba(228, 176, 90, 0.12), transparent 25%),
-              #11131a;
+  background: linear-gradient(135deg, #f8fbf5, #fdf7ef);
 }
 
 .offer-grid {
@@ -346,14 +347,15 @@ p {
   padding: 24px;
   border-radius: 16px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
+  box-shadow: 0 16px 38px rgba(32, 73, 90, 0.08);
 }
 
 .tag {
   display: inline-block;
   margin-top: 12px;
   padding: 8px 12px;
-  background: var(--card);
+  background: #fef1df;
   border-radius: 12px;
   color: var(--accent);
   font-weight: 700;
@@ -364,7 +366,7 @@ p {
   padding: 22px 24px;
   border-radius: 16px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
+  background: #eef5ec;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -373,7 +375,7 @@ p {
 }
 
 .gallery {
-  background: #0c0e12;
+  background: #f8fafc;
 }
 
 .gallery-grid {
@@ -388,10 +390,11 @@ p {
   background-size: cover;
   background-position: center;
   border: 1px solid var(--border);
+  box-shadow: 0 12px 28px rgba(37, 50, 56, 0.08);
 }
 
 .testimonials {
-  background: #0d0f13;
+  background: #fdf7ef;
 }
 
 .testimonial-grid {
@@ -405,11 +408,12 @@ p {
   border-radius: 16px;
   background: var(--card);
   border: 1px solid var(--border);
+  box-shadow: 0 16px 34px rgba(32, 73, 90, 0.08);
 }
 
 .quote {
   font-style: italic;
-  color: #fff;
+  color: var(--text);
 }
 
 .author {
@@ -419,14 +423,14 @@ p {
 }
 
 .contact {
-  background: #0c0e12;
+  background: #f6f8f2;
 }
 
 .contact-card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  background: var(--card);
+  background: #ffffff;
   padding: 24px;
   border-radius: 18px;
   border: 1px solid var(--border);
@@ -449,9 +453,10 @@ textarea {
   padding: 12px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
-  color: #fff;
+  background: #fdfdfd;
+  color: var(--text);
   font-size: 1rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 textarea {
@@ -463,14 +468,14 @@ textarea {
   min-height: 100%;
   border: none;
   border-radius: 16px;
-  filter: grayscale(30%) contrast(110%);
+  box-shadow: 0 14px 34px rgba(32, 73, 90, 0.12);
 }
 
 .site-footer {
   text-align: center;
   padding: 28px;
   border-top: 1px solid var(--border);
-  background: rgba(15, 17, 21, 0.9);
+  background: #f8fafc;
   color: var(--muted);
 }
 
