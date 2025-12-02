@@ -1,8 +1,8 @@
 :root {
   --bg: #0f1115;
   --panel: rgba(255, 255, 255, 0.04);
-  --primary: #d64933;
-  --accent: #ffd166;
+  --primary: #6b8a2f;
+  --accent: #e4b05a;
   --text: #e9eaee;
   --muted: #b4b6c2;
   --card: rgba(255, 255, 255, 0.06);
@@ -17,8 +17,8 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle at 10% 20%, rgba(214, 73, 51, 0.08), transparent 25%),
-              radial-gradient(circle at 80% 0%, rgba(255, 209, 102, 0.06), transparent 25%),
+  background: radial-gradient(circle at 10% 20%, rgba(107, 138, 47, 0.12), transparent 25%),
+              radial-gradient(circle at 80% 0%, rgba(228, 176, 90, 0.1), transparent 25%),
               var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -49,15 +49,14 @@ a {
   gap: 12px;
 }
 
-.brand-mark {
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
+.brand-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--primary), #7c2b1e);
-  font-weight: 700;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 6px;
+  border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
 
@@ -292,9 +291,48 @@ p {
   margin: 12px 0 0;
 }
 
+.sample-menu {
+  margin-top: 48px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 32px 26px 28px;
+  box-shadow: var(--shadow);
+}
+
+.sample-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.sample-item {
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  display: grid;
+  gap: 6px;
+}
+
+.sample-name {
+  margin: 0;
+  font-weight: 700;
+}
+
+.sample-desc {
+  margin: 0;
+  color: var(--muted);
+}
+
+.sample-price {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .highlight {
-  background: radial-gradient(circle at 20% 20%, rgba(214, 73, 51, 0.08), transparent 30%),
-              radial-gradient(circle at 80% 10%, rgba(255, 209, 102, 0.08), transparent 25%),
+  background: radial-gradient(circle at 20% 20%, rgba(107, 138, 47, 0.12), transparent 30%),
+              radial-gradient(circle at 80% 10%, rgba(228, 176, 90, 0.12), transparent 25%),
               #11131a;
 }
 
