@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokalne Smakołyki | Catering regionalny</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">LS</span>
+      <div class="brand-text">
+        <p class="brand-title">Lokalne Smakołyki</p>
+        <p class="brand-subtitle">Catering z sercem</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#hero">Start</a>
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#galeria">Galeria</a>
+      <a class="nav-cta" href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="slider">
+        <div class="slide active" style="background-image: linear-gradient(120deg, rgba(0,0,0,0.35), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1600&q=80');">
+          <div class="slide-content">
+            <p class="eyebrow">Smaki jak u babci</p>
+            <h1>Najlepsze pierogi w mieście</h1>
+            <p>Ręcznie lepione, z lokalnych produktów, podawane z karmelizowaną cebulką i świeżymi ziołami.</p>
+            <a class="btn primary" href="#menu">Zobacz menu</a>
+          </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient(120deg, rgba(0,0,0,0.35), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80');">
+          <div class="slide-content">
+            <p class="eyebrow">Dla zespołów i rodzin</p>
+            <h1>Korytka mięsne i wege</h1>
+            <p>Soczyste pieczenie, pieczone warzywa, śląskie kluski i chrupiące surówki — idealne na spotkania.</p>
+            <a class="btn secondary" href="#catering">Zamów catering</a>
+          </div>
+        </div>
+        <div class="slide" style="background-image: linear-gradient(120deg, rgba(0,0,0,0.35), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1521389508051-d7ffb5dc8bb0?auto=format&fit=crop&w=1600&q=80');">
+          <div class="slide-content">
+            <p class="eyebrow">Eventy, wesela, firmówki</p>
+            <h1>Catering z pełną obsługą</h1>
+            <p>Profesjonalna ekipa, elegancka zastawa i menu dopasowane do Twojego wydarzenia.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#galeria">Obejrzyj realizacje</a>
+              <a class="btn ghost" href="#kontakt">Porozmawiajmy</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button aria-label="Poprzedni slajd" class="control prev">‹</button>
+          <button aria-label="Następny slajd" class="control next">›</button>
+        </div>
+        <div class="slider-dots" aria-label="Nawigacja slidera"></div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="section-heading">
+        <p class="eyebrow">Menu</p>
+        <h2>Ulubione propozycje</h2>
+        <p class="section-lead">Sezonowe składniki, tradycyjne receptury i współczesna oprawa.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Pierogi</h3>
+          <p>Ruskie, z mięsem, z pieczoną dynią, a także opcje wegańskie. Podawane z karmelizowaną cebulką.</p>
+          <ul>
+            <li>Porcja degustacyjna (16 szt.)</li>
+            <li>Półmisek rodzinny (32 szt.)</li>
+            <li>Koryto eventowe (80 szt.)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Korytka mięsne</h3>
+          <p>Żeberka z pieca, karkówka w ziołach, udka w miodzie, pieczone ziemniaki i mix sałatek.</p>
+          <ul>
+            <li>Klasyczne (dla 6–8 osób)</li>
+            <li>Staropolskie (dla 10–12 osób)</li>
+            <li>Premium z dziczyzną</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Wege &amp; Fit</h3>
+          <p>Pieczone warzywa korzeniowe, kule mocy, pierogi z soczewicą, sałatki z lokalnych serów.</p>
+          <ul>
+            <li>Box biurowy (dla 6 osób)</li>
+            <li>Talerz degustacyjny</li>
+            <li>Stół wege na event</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Słodkie stoły</h3>
+          <p>Domowe szarlotki, serniki z wanilią, mini ptysie z kremem, tarty z owocami sezonowymi.</p>
+          <ul>
+            <li>Deserki w słoiczkach</li>
+            <li>Patera mini słodkości</li>
+            <li>Torty okazjonalne</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="catering" class="section highlight">
+      <div class="section-heading">
+        <p class="eyebrow">Catering</p>
+        <h2>Pakiety na każdą okazję</h2>
+        <p class="section-lead">Elastyczne zestawy z dostawą, obsługą kelnerską lub pełnym serwisem.</p>
+      </div>
+      <div class="offer-grid">
+        <div class="offer">
+          <h3>Domówki i rodzinne spotkania</h3>
+          <p>Korytka mięsne, pierogi, świeże sałatki i kompoty. Idealne na urodziny, chrzciny czy rocznice.</p>
+          <span class="tag">od 35 zł / os.</span>
+        </div>
+        <div class="offer">
+          <h3>Eventy firmowe</h3>
+          <p>Przekąski finger food, bufety tematyczne, obsługa kelnerska i dekoracje stołów pod identyfikację marki.</p>
+          <span class="tag">oferta indywidualna</span>
+        </div>
+        <div class="offer">
+          <h3>Wesela &amp; garden party</h3>
+          <p>Dwudaniowe menu, stół wiejski, live cooking pierogów i obsługa baru kawowego.</p>
+          <span class="tag">od 210 zł / os.</span>
+        </div>
+      </div>
+      <div class="cta-panel">
+        <p>Powiedz nam o swoim wydarzeniu, a dobierzemy menu i oprawę.</p>
+        <a class="btn primary" href="#kontakt">Zapytaj o termin</a>
+      </div>
+    </section>
+
+    <section id="galeria" class="section gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Realizacje</p>
+        <h2>Galeria smaków</h2>
+        <p class="section-lead">Zajrzyj do kuchni i zobacz nasze stoły w akcji.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1468218620578-364f6b2d1db1?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80');"></div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-heading">
+        <p class="eyebrow">Opinie</p>
+        <h2>Co mówią nasi klienci</h2>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial">
+          <p class="quote">„Pierogi smakują dokładnie jak u babci, a korytko mięsne zrobiło furorę na urodzinach!”</p>
+          <p class="author">— Anna, przyjęcie rodzinne</p>
+        </article>
+        <article class="testimonial">
+          <p class="quote">„Profesjonalna obsługa eventu, piękna aranżacja bufetu i rewelacyjne wege menu dla naszych gości.”</p>
+          <p class="author">— Tomasz, HR Manager</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section contact">
+      <div class="contact-card">
+        <div class="contact-info">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Porozmawiajmy o Twoim wydarzeniu</h2>
+          <p>Opisz termin, liczbę gości i preferencje, a przygotujemy ofertę w 24h.</p>
+          <div class="contact-details">
+            <p><strong>Telefon:</strong> <a href="tel:+48555111222">+48 555 111 222</a></p>
+            <p><strong>Email:</strong> <a href="mailto:hello@lokalnesmakolyki.pl">hello@lokalnesmakolyki.pl</a></p>
+            <p><strong>Adres kuchni:</strong> ul. Zielona 12, Kraków</p>
+          </div>
+          <form class="contact-form">
+            <div class="form-row">
+              <label for="name">Imię</label>
+              <input type="text" id="name" name="name" placeholder="Twoje imię">
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="name@email.com">
+            </div>
+            <div class="form-row">
+              <label for="details">Wiadomość</label>
+              <textarea id="details" name="details" rows="4" placeholder="Termin, liczba gości, preferencje"></textarea>
+            </div>
+            <button class="btn primary" type="submit">Wyślij zapytanie</button>
+          </form>
+        </div>
+        <div class="map-wrapper">
+          <iframe title="Mapa dojazdu" src="https://www.openstreetmap.org/export/embed.html?bbox=19.9157%2C50.0525%2C19.9480%2C50.0681&amp;layer=mapnik&amp;marker=50.0606%2C19.9325"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2024 Lokalne Smakołyki | Catering regionalny z Krakowa</p>
+    <p><a href="#hero">Do góry ↑</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
