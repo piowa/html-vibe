@@ -269,6 +269,47 @@ p {
   color: var(--muted);
 }
 
+.why {
+  background: linear-gradient(180deg, rgba(116, 181, 89, 0.06), rgba(255, 255, 255, 0));
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.feature {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 16px 36px rgba(32, 73, 90, 0.1);
+  display: grid;
+  gap: 10px;
+}
+
+.feature h3 {
+  margin: 0;
+}
+
+.feature p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.feature-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: #eef5ec;
+  color: var(--primary);
+  border-radius: 14px;
+  font-size: 1.2rem;
+}
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
