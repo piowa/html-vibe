@@ -162,36 +162,38 @@ p {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 18px;
-  border-radius: 12px;
+  padding: 12px 20px;
+  border-radius: 999px;
   font-weight: 700;
+  letter-spacing: 0.01em;
   border: 1px solid transparent;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
   cursor: pointer;
+  box-shadow: 0 14px 34px rgba(32, 73, 90, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, var(--primary), #ef6a4f);
-  color: #fff;
-  box-shadow: var(--shadow);
+  background: linear-gradient(135deg, #5fa172, #8ecf8c);
+  color: #0f2a17;
+  border-color: #5fa172;
 }
 
 .btn.secondary {
   background: #ffffff;
-  border-color: var(--primary);
-  color: var(--text);
-  box-shadow: var(--shadow);
+  border-color: #9fb9a5;
+  color: #0f2a17;
 }
 
 .btn.ghost {
   background: transparent;
-  border-color: var(--primary);
+  border-color: #9fb9a5;
   color: var(--primary);
 }
 
 .btn:hover,
 .btn:focus-visible {
-  transform: translateY(-1px);
+  transform: translateY(-1.5px);
+  box-shadow: 0 16px 36px rgba(32, 73, 90, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
 .hero-actions {
@@ -482,6 +484,13 @@ p {
   display: grid;
   gap: 14px;
   margin-top: 12px;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 4px;
 }
 
 .form-row {
